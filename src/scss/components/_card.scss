@@ -1,0 +1,18 @@
+.card {
+  &.character--card {
+    .card-header {
+      padding: 0;
+    }
+
+    figure {
+      margin: 0;
+      max-height: 250px;
+      display: flex;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

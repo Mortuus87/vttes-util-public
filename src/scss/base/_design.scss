@@ -1,0 +1,12 @@
+h1 {
+  margin: 1rem 0 1.5rem;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 75px;
+    background-color: $primary;
+    margin-top: .5rem;
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "schema_version": 3,
+    "type": "character",
+    "character": {
+        "oldId": "",
+        "name": "Name",
+        "avatar": "",
+        "bio": "",
+        "gmnotes": "",
+        "defaulttoken": "",
+        "tags": "[]",
+        "controlledby": "",
+        "inplayerjournals": "",
+        "attribs": [],
+        "abilities": []
+    }
+}

@@ -1,0 +1,24 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header .navbar {
+  padding: 0;
+}
+
+#footer {
+  background-color: $dark;
+  min-height: 50px;
+  margin-top: auto;
+  color: #fff;
+
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+

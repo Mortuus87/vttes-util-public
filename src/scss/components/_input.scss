@@ -1,0 +1,31 @@
+.text-input-wrapper {
+  position: relative;
+
+  .edit-indicator {
+    display: none;
+    position: absolute;
+    align-items: center;
+    right: 6px;
+    top: 0;
+    height: 100%;
+    color: $subtle-color-2;
+    font-size: 14px;
+  }
+
+  &:hover {
+    &:not(.disabled) .edit-indicator {
+      display: inline-flex;
+    }
+  }
+
+  .text-input {
+    width: 100%;
+    border: 1px solid $subtle-color;
+    border-radius: $border-radius;
+    color: #333;
+
+    &[disabled] {
+      padding-right: 2px;
+    }
+  }
+}

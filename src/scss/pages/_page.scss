@@ -1,0 +1,31 @@
+.page {
+  &--home {
+    section {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+  // &--character {
+  //   background-color: paleturquoise;
+
+  // }
+  // &--gallery {
+  //   background-color: palegreen
+
+  // }
+  &--login {
+    background-color: $light;
+
+    form.login {
+      label {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: .875rem;        
+      }
+
+      [type=submit] {
+        margin: 1.5rem 0 1rem auto;
+      }
+    }
+  }
+}

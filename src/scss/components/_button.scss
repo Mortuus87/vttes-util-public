@@ -1,0 +1,96 @@
+%theme-button {
+  border-radius: 200px;
+  border: 2px solid $primary;
+  color: #fff;
+  padding: 2px 16px;
+  cursor: pointer;
+  background-color: $primary;
+  margin: 0 4px 8px;
+  line-height: 1.5;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+    color: $primary;
+  }
+
+  @each $name, $color, $text, $text-hover in $colors {
+    &.btn-#{$name} {
+      background-color: $color;
+      border-color: $color;
+      color: $text;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #fff;
+        color: $text-hover;
+      }
+
+      &.btn-bg {
+        padding: .5rem 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+    padding: 6px 16px;
+  }
+}
+
+.btn {
+  @extend %theme-button;
+
+
+}
+
+.button-form {
+  display: inline-flex;
+
+
+  input {
+    @extend %theme-button;
+  }
+
+}
+
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+.file-input {
+  display: inline-block;
+
+  label {
+    @extend %theme-button;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav-link {
+  border-bottom: 3px solid transparent;
+  height: 100%;
+  color: #fff;
+
+  &:hover {
+    color: $dark;
+    background-color: #fff;
+  }
+
+  &.active {
+    border-color: #fff;
+  }
+}

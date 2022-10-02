@@ -1,0 +1,24 @@
+$dark: #3D3D3D;
+$light: #ccc;
+
+$primary: #22568a;
+$warning: #EC920B;
+$success: #62AB32;
+$danger: #C11414;
+
+// class name, background-color, text-color, text-color-hover
+$colors: (
+  "primary" $primary #fff $primary,
+  "secondary" $secondary #fff $secondary,
+  "warning" $warning $dark $dark,
+  "danger" $danger #fff $danger,
+);
+
+$subtle-color: rgba(0, 0, 0, 0.075);
+$subtle-color-2: rgba(0, 0, 0, 0.2);
+
+$border-radius: 4px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
